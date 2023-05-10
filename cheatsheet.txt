@@ -1,0 +1,58 @@
+       HEROKU deployment:
+
+heroku login
+
+(first time: git init)
+heroku git:remote -a boxfit-mainspessart
+git remote -v
+git status
+git add .
+git status
+git commit -am "--name of update--"
+
+git status
+git push heroku master
+
+
+#git push heroku master -force
+
+
+
+          -- OR --
+
+
+
+git status
+git add .
+git status
+git commit -m "--name of update--"
+
+git push heroku master
+git push heroku master -force
+
+
+
+
+
+
+
+
+
+       MAKE MIGRATIONS:
+
+heroku run python manage.py makemigrations --app dreamerloans
+heroku run python manage.py migrate --app dreamerloans
+
+
+
+
+        SHOW LOGS
+
+heroku logs --tail    # show logfiles
+
+
+
+       WEBSITE CHECKING:
+
+https://search.google.com/u/2/search-console/inspect?resource_id=https%3A%2F%2Fboxfit-mainspessart.herokuapp.com%2F&id=mJ-shY7pbvsv3PkE7t2nIA
+https://pagespeed.web.dev

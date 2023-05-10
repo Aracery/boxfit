@@ -1,0 +1,109 @@
+
+/* ALL */
+
+
+
+/* OBJECT TYPES */
+
+
+
+/* BODY PARTS */
+
+
+
+
+
+
+/* INDIVIDUAL */
+
+/* Header */
+
+
+/* Main */
+
+.kontaktsplit
+{
+	display: grid;
+	grid-template-columns: 30% 60%;
+	column-gap:4%;
+	margin:2.5% 8% 2%;
+}
+
+.telnumber
+{
+	text-align:left;
+}
+
+.textbox
+{
+	width: 100%;
+	background-color:#fffff6ff;
+	margin-top:3%;
+	padding:1vh 1vw;
+	color:grey;
+	border:2px solid grey;
+	border-radius:15px;
+	font-size:80%
+}
+
+.textboxbig/**/
+{
+	border-radius:15px;
+	margin-top:3vh;
+	padding-bottom:25vh;
+	resize: none;
+	overflow-x: hidden;
+}
+
+.sendingbutton
+{
+	text-align:right;
+	margin-top:4%;
+}
+
+/* Footer */
+
+
+
+@media only screen and (max-width:820px)
+{
+	.kontaktsplit
+	{
+		display: grid;
+		grid-template-columns: auto;/**/
+		column-gap:4%;
+		margin:2.5% 8% 2%;
+	  row-gap: 3vh;
+	}
+
+	.telnumber
+	{
+		text-align:center;
+	}
+
+
+	.textbox/**/
+	{
+		width: 100%;
+		background-color:#fffff6ff;
+		margin-top:1.5vh;
+		padding:1vh 3vw;
+		color:grey;
+		border:2px solid grey;
+		border-radius:1.5vw;
+		font-size:3vw;
+	}
+
+	.textboxbig/**/
+	{
+		border-radius:1.75vw;
+		margin-top:3vh;
+		padding-bottom:20vh;
+	}
+
+	.sendingbutton/**/
+	{
+		text-align:right;
+		margin-top:2vh;
+	}
+}

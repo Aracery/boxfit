@@ -1,0 +1,93 @@
+
+/* ALL */
+
+
+
+/* OBJECT TYPES */
+
+
+
+/* BODY PARTS */
+
+
+
+
+
+
+/* INDIVIDUAL */
+
+/* Header */
+
+/* Main */
+
+
+.headerimage.hp1
+{
+  padding:3% 0 3%;
+  justify-content: center;
+  min-height:45vh;
+  display: flex;
+  align-items: flex-end;
+  border:none;
+}
+
+.logoimage
+{
+  width: 30%;
+  max-width: 70vh;
+  border:none;
+}
+
+.cardwrap
+{
+  text-align:center;
+  background-color:#aa0000ff;
+  color:white;
+  margin:6% auto 0;
+  padding:2% 0;
+  width:75vw;
+  max-width:1000px;
+	height:70vh;
+}
+
+.card
+{
+  border:0;
+  margin-top:2.5%;
+  width:90%;
+  height:90%;
+}
+
+/* Footer */
+
+
+
+@media only screen and (max-width:820px)
+{
+  .logoimage
+  {
+    width: 70vw;/**/
+    max-width: 70vh;/**/
+    border:none;
+  }
+
+  .cardwrap
+  {
+    text-align:center;
+    background-color:#aa0000ff;
+    color:white;
+    margin:6vh auto 0;
+    padding:2vh 0;
+    max-width:1000px;
+    width:80vw;/**/
+    height:50vh;/**/
+  }
+
+  .card
+  {
+    border:0;
+    margin:2vh 0 2vh%;/**/
+    width:90%;/**/
+    height:90%;/**/
+  }
+}

@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="google-site-verification" content="AMFTYrKxQAJoPgXTSkur5rGBjq7TxmiQGyTg3HZWx8I" />
+    <title>BoxFit Mainspessart - Mitflied werden</title>
+    <link rel="icon" href="{% static 'images/OUTPUT_BoxFit_Ganz_Icon.svg' %}" type="image/svg+xml">
+    <style type="text/css">
+      @font-face {
+      font-family: 'Courier New';
+      src: local('Courier New Bold'), url({% static 'fonts/Courier_New_Bold.ttf' %}) format('truetype');
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylemain.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylemitgliedwerden.css' %}">
+    <script src="{% static 'js/ajax.libs.jquery.(2.1.1).jquery.min.js' %}"></script>
+  </head>
+
+  <body>
+    <header id="realheader">
+      <div class="headerlinks">
+        <a href="{% url 'home' %}">HOME</a>             <span class="headerspacer">|</span>
+        <a href="{% url 'mitgliedwerden' %}">MITGLIED WERDEN</a>  <span class="headerspacer">|</span>
+        <a href="{% url 'preise' %}">PREISE</a>           <span class="headerspacer">|</span>
+        <a href="{% url 'kontakt' %}">KONTAKT</a>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="headerimage" id="realheaderimage"><a href="{% url 'home' %}"><img class="boxfitlogoimage" src="{% static 'images/OUTPUT_BoxFit_Schrift.svg' %}"></a></div>
+      <div class="Uberschrift">Mitglied werden</div>
+
+      <div class="middletextfield">Melde Dich noch heute bei uns an und werde Mitglied, oder beantrage eine Probestunde per E-Mail!</div>
+
+      <a target="_blank" rel="noopener noreferrer" href="{% static 'images/Mitgliedsantrag_BoxFitMainspessart.pdf' %}" download="Mitgliedsantrag_BoxFitMainspessart.pdf"><button class="pdfdownload">Anmeldung downloaden</button></a>
+
+      <div class="pdfwrap">
+        <div class="pdfimagebackground">
+          <a target="_blank" rel="noopener noreferrer" href="{% static 'images/Mitgliedsantrag_BoxFitMainspessart.pdf' %}" download="Mitgliedsantrag_BoxFitMainspessart.pdf"><img class="pdfembed" src="{% static 'images/Mitgliedsantrag_BoxFitMainspessart_Seite1.svg' %}"></a>
+          <a target="_blank" rel="noopener noreferrer" href="{% static 'images/Mitgliedsantrag_BoxFitMainspessart.pdf' %}" download="Mitgliedsantrag_BoxFitMainspessart.pdf"><img class="pdfembed" src="{% static 'images/Mitgliedsantrag_BoxFitMainspessart_Seite2.svg' %}"></a>
+        </div>
+        <!-- <embed class="pdfembed" src="{% static 'images/Mitgliedsantrag_BoxFitMainspessart.pdf' %}"> -->
+      </div>
+
+    </main>
+
+
+    <footer>
+      <div class="footernormcontent">
+        <div class="footercontact">
+          <div class="footerspace"><img class="footerspacecontacticon" src="{% static 'images/tel_icon.svg' %}"></div><div class="footerspace"><p>+49 1575 8477851</p></div>
+          <div class="footerspace"><img class="footerspacecontacticon" src="{% static 'images/email_icon.svg' %}"></div><div class="footerspace"><p>boxfit.mainspessart@gmail.com</p></div>
+          <div class="footerspace"><img class="footerspacecontacticon" src="{% static 'images/instagram_icon.svg' %}"></div><div class="footerspace"><p>boxfit_mainspessart</p></div>
+          <div class="footerspace"><img class="footerspacecontacticon" src="{% static 'images/location_icon.svg' %}"></div><div class="footerspace"><p>Würzburger Straße 13</p><p>97753 Karlstadt</p></div>
+        </div>
+        <div class="footerlinks">
+          <p class="footerspace"><a href="{% url 'home' %}">HOME</a></p>
+          <p class="footerspace"><a href="{% url 'mitgliedwerden' %}">MITGLIED WERDEN</a></p>
+          <p class="footerspace"><a href="{% url 'preise' %}">PREISE</a></p>
+          <p class="footerspace"><a href="{% url 'kontakt' %}">KONTAKT</a></p>
+          <p class="footerspace"><a href="{% url 'impressum' %}">IMPRESSUM</a></p>
+          <p class="footerspace"><a href="{% url 'datenschutz' %}">DATENSCHUTZ</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="{% static 'js/scriptmain.js' %}"></script>
+  </body>
+</html>

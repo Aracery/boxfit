@@ -1,0 +1,99 @@
+
+/* ALL */
+
+
+
+/* OBJECT TYPES */
+
+button
+{
+	margin:0 auto;
+}
+
+/* BODY PARTS */
+
+
+
+
+
+
+/* INDIVIDUAL */
+
+/* Header */
+
+/* Main */
+
+.middletextfield
+{
+	padding:1% 0 4%;
+}
+
+.pdfdownload
+{
+	display:block;
+	margin-top: -5% auto 0;
+}
+
+.pdfwrap
+{
+	text-align:center;
+	margin:5% auto 0;
+}
+
+.pdfimagebackground
+{
+	padding:2%;
+	background-color:#808080ff;
+	grid-template-columns: auto auto;
+}
+
+.pdfembed
+{
+	width:44.75vw;
+	/* height:95vh; */
+}
+
+/* Footer */
+
+
+
+@media only screen and (max-width:820px)
+{
+	.middletextfield
+	{
+		width:70vw;/**/
+		margin:auto;
+		padding:1% 0 0;/**/
+		line-height:140%;
+	}
+
+	.pdfdownload
+	{
+		display:block;/**/
+		margin: 3.5vh auto 0;/**/
+	}
+
+	.pdfwrap
+	{
+		text-align:center;
+		margin:5vh auto/**/
+	}
+
+	.pdfimagebackground
+	{
+		padding:6vw;
+		background-color:#808080ff;
+		grid-template-columns: 90%;
+	}
+
+	/* .pdfembed
+	{
+		width:90vw;
+		height:122vh;
+	} */
+
+	.pdfembed
+	{
+		width:90vw;
+	}
+}

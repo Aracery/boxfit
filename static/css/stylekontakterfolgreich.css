@@ -1,0 +1,76 @@
+/* ALL */
+
+
+
+/* OBJECT TYPES */
+
+
+
+/* BODY PARTS */
+
+
+
+/* INDIVIDUAL */
+
+/* Header */
+header
+{
+  box-shadow:none;
+}
+
+/* Main */
+.contentcontainer
+{
+  height:75vh;
+  align-items: center;
+  vertical-align: middle;
+  display: flex;
+}
+
+.checkmark_n_button_wrap
+{
+  /* align-content:center; */
+  margin:auto;
+  padding: 3vh 0;
+  text-align:center;
+  vertical-align: middle;
+}
+
+.checkmarkimage
+{
+  margin:0 auto;
+  width:10vh;
+  min-width: 10vw;
+}
+
+.homebutton
+{
+  margin:3vh auto 0;
+}
+
+/* Footer */
+
+
+@media only screen and (max-width:820px)
+{
+  /* ALL */
+
+
+
+  /* OBJECT TYPES */
+
+
+
+  /* BODY PARTS */
+
+
+
+  /* INDIVIDUAL */
+
+  /* Header */
+
+
+  /* Main */
+
+  /* Footer */
+}
